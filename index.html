@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio; As a Web Dev.</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/82f797382f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <nav>
+                <h2 class="logo">
+                    <span>A</span>mbassador <span>D</span>ave.
+                </h2>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i> 
+            </nav>
+            <div class="header-text">
+                <p>UI/UX designer</p>
+                <h1>Hey, I'm David Umukoro <br>A Web Developer.
+                + A YouTuber.</h1>
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/dave.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm David Umukoro; A student of University of Jos, reading <i>Biochemistry</i>. But I know you might be like "what concerns Biochemistry with Web Development"<br>The truth is
+                    i fell in love with writing codes, Then decided to venture into Web Development.
+                Plus bet me i'm really Good at it.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Educations</p>
+
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/\app Interfaces</li>
+                        <li><span>Web Development</span><br>Designing Web/\app Interfaces</li>
+                        <li><span>App Development</span><br>Designing Web/\app Interfaces</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2020-current</span><br>UI/UX design training at <i>COOKIEE</i></li>
+                        <li><span>2021-2022</span><br>Team leader at Sixkingz</li>
+                        <li><span>App Development</span><br>Designing Web/\app Interfaces</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2018</span><br>university of jos</li>
+                        <li><span>2021</span><br>Designing Web/\app Interfaces</li>
+                        <li><span>2022</span><br>Designing Web/\app Interfaces</li>
+                    </ul>
+                </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------services---------> 
+    <section id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>We create marvelous responsive Website and Web Apps for both PC and Mobile Devices.</p>
+                    <a href="https://wa.me/message/6NW6LAAA4IQ6H1">Learn More</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>UI/UX</h2>
+                    <p>We make marvelous responsive website for both PC and Mobile Devices look very attracive to the client.</p>
+                    <a href="https://wa.me/message/6NW6LAAA4IQ6H1">Learn More</a>
+                </div>
+                <div>
+                    <i class="fas fa-app-store"></i>
+                    <h2>App Design</i></h2>
+                    <p>We create marvelous responsive Application for all Mobile Devices.</p>
+                    <a href="https://wa.me/message/6NW6LAAA4IQ6H1">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--portfolio--> 
+    <section id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/animationlovers.png">
+                    <div class="layer">
+                        <h3>Animation Lovers</h3>  
+                        <p>An online LMS website, just like udemy...</p>
+                        <a href="https://youtube.com/@AnimationLovers822">Check Now</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/bernardokoye.png">
+                    <div class="layer">
+                        <h3>Bernard Okoye</h3>
+                        <p>A Business tycoon Man...</p>
+                        <a href="https://bernardokoye.com">Check Now</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/bernardokoye.png">
+                    <div class="layer">
+                        <h3>Africanontreprenuer</h3>
+                        <p>An online LMS website, just like udemy...</p>
+                        <a href="africanontreprenuer.com">Check Now</a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://wa.me/message/6NW6LAAA4IQ6H1" class="btn">See More</a>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact-Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>Contact @ dumukoro02@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>08118328634</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/message/6NW6LAAA4IQ6H1"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://youtube.com/@AnimationLovers822"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <a href="#" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" id="" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright&copy; @ Dave; Made with <i class="fas fa-heart"></i>By David Umukoro.</p>
+        </div>
+    </section>
+    
+
+    <script src="javascript/script.js"></script>
+    
+</body>
+</html>
